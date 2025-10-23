@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currículum Vitae - [NOM]</title>
+  <style>
+    :root{--accent:#0b6;--muted:#666}
+    body{font-family:Inter,system-ui,Segoe UI,Arial;max-width:900px;margin:32px auto;padding:28px;background:#fff;color:#111}
+    .container{display:grid;grid-template-columns:260px 1fr;gap:28px}
+    header{grid-column:1/-1;display:flex;align-items:center;gap:18px}
+    .photo{width:110px;height:110px;border-radius:8px;background:#eee;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+    h1{margin:0;font-size:28px}
+    h2{margin:0 0 8px 0;font-size:16px;color:var(--accent)}
+    .meta{font-size:14px;color:var(--muted)}
+    section{padding:12px 0;border-bottom:1px solid #f0f0f0}
+    .label{font-weight:600;margin-bottom:6px}
+    ul{margin:6px 0 0 18px}
+    .fill{display:inline-block;min-width:120px;border-bottom:2px dashed #ddd;padding:2px 4px}
+    .job, .edu{margin-bottom:12px}
+    .small{font-size:13px;color:var(--muted)}
+    @media(print){body{max-width:100%;margin:0;padding:0} .container{grid-template-columns:1fr 2fr} .photo{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="photo">
+        <img src="foto.jpg" alt="foto" width="110" height="110">
+      </div>
+      <div style="flex:1">
+        <h1>Robert Felip Olid</h1>
+        <div class="meta">
+          Estudiant de programacio — Mollerussa
+        </div>
+        <div class="meta" style="margin-top:6px">
+          <span class="small">Email:</span> robertfelipolid@gmail.com &nbsp; • &nbsp;
+          <span class="small">Tel:</span> +34 693 06 69 60
+        </div>
+      </div>
+    </header>
+
+    <aside style="padding-right:8px">
+      <section>
+        <h2>Perfil</h2>
+        <p>Sóc un estudiant en probramacio amb un titul en telecomunicacions.</p>
+      </section>
+
+      <section>
+        <h2>Habilitats</h2>
+        <ul>
+          <li>HTML, C++</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Idiomes</h2>
+        <ul>
+          <li>Català — Natiu</li>
+          <li>Espanyol — Natiu</li>
+          <li>Anglès — bacic</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main>
+      <section>
+        <h2>Experiència professional</h2>
+
+        <div class="job">
+          <div class="label">Tecnic informatic <span class="small">— 2024 - 2025</span></div>
+          <div class="small">Informatica Montull, Mollerussa</div>
+          <p>Reparacio de softwer i hardwar.</p>
+        </div>
+
+        <div class="job">
+          <div class="label">Tecnic informatic <span class="small">— 2025 - 2025</span></div>
+          <div class="small">IMolle, Mollerussa</div>
+          <p>Reparacio de softwer i hardwar.</p>
+        </div>
+
+        <div class="job">
+          <div class="label">Preparador de comandes <span class="small">— 2025 - 2025</span></div>
+          <div class="small">Nufri, Mollerussa</div>
+          <p>preparant i transportant caixes amb fruita.</p>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>Formació</h2>
+
+        <div class="edu">
+          <div class="label">Instalacions en Terlecomunicacions <span class="small">— 2023 - 2025</span></div>
+          <div class="small">La Salle Mollerussa</div>
+        </div>
+
+      </section>
+
+      <section>
+        <h2>Projectes / Certificacions</h2>
+        <ul>
+          <li>
+            <div class="label">Millora de el joc de aplastar topos </div>
+            <div class="small">2025</div>
+            <p>Projecte personal per millorar un antic progeecte basat en el antic joc de aplastar topos. el codic esta escrit en c++</p>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Altres dades</h2>
+        <p>Disponibilitat per viatjar i treballar en remot.</p>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
