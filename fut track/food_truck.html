@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>🔥 El Gust del Foc — Menú</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    /* ====== GLOBAL ====== */
+    :root{
+      --accent1: #ff6600;
+      --accent2: #ff3300;
+      --bg1: #fff8f0;
+      --card-bg: #ffffff;
+      --muted: #666;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(180deg,var(--bg1), #ffe3d3);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+    }
+    h1,h2,h3{font-family:'Bebas Neue',sans-serif;margin:0 0 .25rem}
+    header{
+      background: linear-gradient(90deg,var(--accent1),var(--accent2));
+      color:white;padding:18px 14px;position:sticky;top:0;z-index:20;
+      box-shadow:0 3px 8px rgba(0,0,0,0.18);
+      display:flex;align-items:center;justify-content:space-between;gap:12px;
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand h1{font-size:1.6rem}
+    .tag{font-size:.85rem;opacity:.95}
+    nav{display:flex;gap:12px}
+    nav a{color:white;text-decoration:none;font-weight:700}
+    nav a:hover{color:#ffe066}
+
+    /* HERO */
+    .hero{
+      background:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color:white;text-align:center;padding:80px 18px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5)
+    }
+    .hero h2{font-size:2rem;margin-bottom:.5rem}
+    .hero p{max-width:760px;margin:auto;color:rgba(255,255,255,0.95);font-size:1.05rem}
+
+    /* SECTIONS */
+    section{padding:48px 18px}
+    #plats h2{text-align:center;margin-bottom:20px}
+
+    /* GALLERY / CARDS */
+    .galeria{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:22px;
+      max-width:1200px;margin:0 auto;
+    }
+    .plat{
+      background:var(--card-bg);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 6px 20px rgba(0,0,0,0.10);
+      text-decoration:none;color:inherit;
+      transition:transform .28s,box-shadow .28s;
+      display:block;
+    }
+    .plat:hover{transform:translateY(-8px);box-shadow:0 12px 30px rgba(0,0,0,0.18)}
+    .plat img{width:100%;height:180px;object-fit:cover;display:block}
+    .plat .body{padding:14px}
+    .plat h3{color:var(--accent2);font-size:1.15rem;margin-bottom:6px}
+    .plat p{margin:0;color:var(--muted);font-size:.95rem}
+
+    /* CONTACT FORM */
+    .contact-wrap{max-width:520px;margin:18px auto 0}
+    form{display:flex;flex-direction:column;gap:10px}
+    input,textarea,button{
+      padding:10px;border-radius:8px;border:1px solid #ddd;font-size:1rem;
+    }
+    button{
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      color:white;border:0;font-weight:700;cursor:pointer;
+    }
+    button:hover{opacity:.95}
+
+    footer{background:#222;color:white;text-align:center;padding:18px;font-size:.9rem}
+
+    /* RESPONSIVE */
+    @media (max-width:600px){
+      .hero{padding:46px 14px}
+      header{flex-direction:column;align-items:flex-start;gap:8px}
+      .brand h1{font-size:1.2rem}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div style="font-size:1.6rem">🔥</div>
+      <div>
+        <h1>El Gust del Foc</h1>
+        <div class="tag">El món en un mos de picant</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#plats">Plats</a>
+      <a href="#contacte">Contacte</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inici">
+      <h2>Descobreix els sabors que escalfen el món</h2>
+      <p>De l’Índia a Corea, del sud d’Àfrica als carrers de Texas — cada plat és una història, cada mos un repte. Tria, clica i aprèn més sobre cadascun dels nostres plats picants.</p>
+    </section>
+
+    <section id="plats">
+      <h2>🌶️ Plats destacats</h2>
+      <div class="galeria">
+        <a class="plat" href="vindaloo.html">
+          <img src="Vindaloo.jpg" alt="Curry Vindaloo">
+          <div class="body">
+            <h3>🍛 Curry Vindaloo — Índia</h3>
+            <p>Foc goès: vinagre, espècies i molt de xili.</p>
+          </div>
+        </a>
+
+        <a class="plat" href="tteokbokki.html">
+          <img src="Tteokbokki.jpg" alt="Tteokbokki">
+          <div class="body">
+            <h3>🥢 Tteokbokki — Corea del Sud</h3>
+            <p>Pastís d'arròs banyat en gochujang intens.</p>
+          </div>
+        </a>
+
+        <a class="plat" href="piri-piri.html">
+          <img src="piri-piri.avif" alt="Piri-Piri">
+          <div class="body">
+            <h3>🐔 Pollastre Piri-Piri — Àfrica</h3>
+            <p>Marinada cítrica amb poderós xili africà.</p>
+          </div>
+        </a>
+
+        <a class="plat" href="ramen.html">
+          <img src="ramen.jpg" alt="Ramen Spicy">
+          <div class="body">
+            <h3>🍜 Ramen Spicy — Japó</h3>
+            <p>Caldo profund amb miso i toc picant.</p>
+          </div>
+        </a>
+
+        <a class="plat" href="tacos.html">
+          <img src="tacos.jpg" alt="Tacos Inferno">
+          <div class="body">
+            <h3>🌮 Tacos Inferno — Mèxic</h3>
+            <p>Habanero, carn a la planxa i formatge fosa.</p>
+          </div>
+        </a>
+
+        <a class="plat" href="sichuan.html">
+          <img src="sichuan.jpg" alt="Mapo Tofu">
+          <div class="body">
+            <h3>🥢 Mapo Tofu — Sichuan (Xina)</h3>
+            <p>Tofu, pebre de Sichuan i calfreds elèctrics.</p>
+          </div>
+        </a>
+
+        <a class="plat" href="chili.html">
+          <img src="chili.jpg" alt="Kimchi Jjigae">
+          <div class="body">
+            <h3>🌶️ Chili con carne — Texas (EUA)</h3>
+            <p>Comfort food amb toc picant texà i comí.</p>
+          </div>
+        </a>
+
+        <a class="plat" href="kimchi-jjigae.html">
+          <img src="chili.jpg" alt="Chili con carne">
+          <div class="body">
+            <h3>🔥 Chili con carne — Texas (EUA)</h3>
+            <p>Comfort food amb toc picant texà i comí.</p>
+          </div>
+        </a>
+        <!-- Afegeix més plats aquí si vols -->
+      </div>
+    </section>
+
+    <section id="contacte">
+      <h2>Contacta amb nosaltres</h2>
+      <p style="max-width:760px;margin:0 auto 12px;color:var(--muted)">Vols contractar-nos per un esdeveniment, o tens preguntes sobre els nivells de picant? Escriu-nos.</p>
+      <div class="contact-wrap">
+        <form onsubmit="event.preventDefault(); alert('Gràcies! Missatge enviat (simulat).');">
+          <input type="text" placeholder="Nom" required>
+          <input type="email" placeholder="Correu electrònic" required>
+          <textarea placeholder="Missatge..." rows="4"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 El Gust del Foc — El món en un mos de picant
+  </footer>
+</body>
+</html>
